@@ -11,6 +11,13 @@ $(document).keypress(function(){
     started = true;
   }
 });
+$(document).click(function(){
+  if(!started){
+    $("#level-title").text("Level "+ level);
+    nextSequence();
+    started = true;
+  }
+});
 
 
 
